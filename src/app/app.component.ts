@@ -1,5 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ELunaTheme } from '@core/theme/models/enums/theme';
+import { LunaThemeService } from '@core/theme/theme.service';
 
 @Component({
   selector: 'luna-root',
@@ -9,4 +11,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor(private readonly m_lunaTheme: LunaThemeService) {
+    this.m_lunaTheme.applyTheme(ELunaTheme.Default);
+  }
+}

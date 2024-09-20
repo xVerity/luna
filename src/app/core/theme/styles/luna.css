@@ -1,0 +1,14 @@
+:root {
+  --lunaBackgroundColor: none;
+  --lunaFontColor: none;
+}
+
+body,
+html {
+  background-color: var(--lunaBackgroundColor);
+  color: var(--lunaFontColor);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
