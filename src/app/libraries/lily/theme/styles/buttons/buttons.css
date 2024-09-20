@@ -1,0 +1,38 @@
+:root {
+  --lilyButtonBackgroundColor: none;
+  --lilyButtonBorderColor: none;
+  --lilyButtonFontColor: none;
+  --lilyButtonFocusBackgroundColor: none;
+  --lilyButtonFocusBorderColor: none;
+  --lilyButtonFocusFontColor: none;
+  --lilyButtonDisabledBackgroundColor: none;
+  --lilyButtonDisabledBorderColor: none;
+  --lilyButtonDisabledFontColor: none;
+  --lilyButtonHoverBackgroundColor: none;
+  --lilyButtonHoverBorderColor: none;
+  --lilyButtonHoverFontColor: none;
+}
+
+.lily-button {
+  background-color: var(--lilyButtonBackgroundColor);
+  border-color: var(--lilyButtonBorderColor);
+  color: var(--lilyButtonFontColor);
+}
+
+.lily-button:focus {
+  background-color: var(--lilyButtonFocusBackgroundColor);
+  border-color: var(--lilyButtonFocusBorderColor);
+  color: var(--lilyButtonFocusFontColor);
+}
+
+.lily-button:disabled {
+  background-color: var(--lilyButtonDisabledBackgroundColor);
+  border-color: var(--lilyButtonDisabledBorderColor);
+  color: var(--lilyButtonDisabledFontColor);
+}
+
+.lily-button:hover:not(:focus):not(disabled) {
+  background-color: var(--lilyButtonHoverBackgroundColor);
+  border-color: var(--lilyButtonHoverBorderColor);
+  color: var(--lilyButtonHoverFontColor);
+}
