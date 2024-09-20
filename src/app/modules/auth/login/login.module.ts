@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { LilyTextboxModule } from '@lily/inputs/textbox/textbox.module';
 import { LilyDivModule } from '@lily/layout/div/div.module';
 import { LunaLoginComponent } from './login.component';
 
@@ -17,6 +18,7 @@ import { LunaLoginComponent } from './login.component';
       },
     ]),
     LilyDivModule,
+    LilyTextboxModule,
   ],
   exports: [],
   providers: [],

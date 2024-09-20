@@ -20,6 +20,7 @@
   background-color: var(--lilyInputBackgroundColor);
   border-color: var(--lilyInputBorderColor);
   color: var(--lilyInputFontColor);
+  outline: none;
 }
 
 .lily-input:focus {
@@ -34,7 +35,7 @@
   color: var(--lilyInputDisabledFontColor);
 }
 
-.lily-input:hover {
+.lily-input:hover:not(:focus):not(disabled) {
   background-color: var(--lilyInputHoverBackgroundColor);
   border-color: var(--lilyInputHoverBorderColor);
   color: var(--lilyInputHoverFontColor);
