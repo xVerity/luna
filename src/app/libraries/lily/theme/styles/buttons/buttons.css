@@ -17,6 +17,7 @@
   background-color: var(--lilyButtonBackgroundColor);
   border-color: var(--lilyButtonBorderColor);
   color: var(--lilyButtonFontColor);
+  outline: none;
 }
 
 .lily-button:focus {
