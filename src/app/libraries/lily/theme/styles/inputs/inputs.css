@@ -1,0 +1,41 @@
+:root {
+  --lilyInputBackgroundColor: none;
+  --lilyInputBorderColor: none;
+  --lilyInputFontColor: none;
+
+  --lilyInputFocusBackgroundColor: none;
+  --lilyInputFocusBorderColor: none;
+  --lilyInputFocusFontColor: none;
+
+  --lilyInputDisabledBackgroundColor: none;
+  --lilyInputDisabledBorderColor: none;
+  --lilyInputDisabledFontColor: none;
+
+  --lilyInputHoverBackgroundColor: none;
+  --lilyInputHoverBorderColor: none;
+  --lilyInputHoverFontColor: none;
+}
+
+.lily-input {
+  background-color: var(--lilyInputBackgroundColor);
+  border-color: var(--lilyInputBorderColor);
+  color: var(--lilyInputFontColor);
+}
+
+.lily-input:focus {
+  background-color: var(--lilyInputFocusBackgroundColor);
+  border-color: var(--lilyInputFocusBorderColor);
+  color: var(--lilyInputFocusFontColor);
+}
+
+.lily-input:disabled {
+  background-color: var(--lilyInputDisabledBackgroundColor);
+  border-color: var(--lilyInputDisabledBorderColor);
+  color: var(--lilyInputDisabledFontColor);
+}
+
+.lily-input:hover {
+  background-color: var(--lilyInputHoverBackgroundColor);
+  border-color: var(--lilyInputHoverBorderColor);
+  color: var(--lilyInputHoverFontColor);
+}
