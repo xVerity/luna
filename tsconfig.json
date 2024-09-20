@@ -20,7 +20,7 @@
     "module": "ES2022",
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@luna/*": ["src/app/libraries/luna/*"],
+      "@lily/*": ["src/app/libraries/lily/*"],
       "@cass/*": ["src/app/libraries/cass/*"],
       "@core/*": ["src/app/core/*"],
       "@app/*": ["src/app/*"],

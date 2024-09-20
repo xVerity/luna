@@ -10,6 +10,10 @@ import { LunaTheme } from './models/theme';
   providedIn: 'root',
 })
 export class LunaThemeService {
+  /**
+   * Applies a theme to the Luna application.
+   * @param a_theme The theme to apply.
+   */
   public applyTheme(a_theme: ELunaTheme): void {
     switch (a_theme) {
       case ELunaTheme.Default:

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { LilyDivModule } from '@lily/layout/div/div.module';
 import { LunaLoginComponent } from './login.component';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { LunaLoginComponent } from './login.component';
         redirectTo: '',
       },
     ]),
+    LilyDivModule,
   ],
   exports: [],
   providers: [],

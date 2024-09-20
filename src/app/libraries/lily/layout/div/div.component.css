@@ -1,0 +1,29 @@
+.lily-div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.lily-div.lily-div-horizontal-align-left {
+  justify-content: flex-start;
+}
+
+.lily-div.lily-div-horizontal-align-center {
+  justify-content: center;
+}
+
+.lily-div.lily-div-horizontal-align-right {
+  justify-content: flex-end;
+}
+
+.lily-div.lily-div-vertical-align-top {
+  align-items: flex-start;
+}
+
+.lily-div.lily-div-vertical-align-center {
+  align-items: center;
+}
+
+.lily-div.lily-div-vertical-align-bottom {
+  align-items: flex-end;
+}
