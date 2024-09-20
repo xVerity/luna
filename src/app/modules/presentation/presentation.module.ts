@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
+import { LunaPresentationComponent } from './presentation.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [LunaPresentationComponent],
   imports: [],
   exports: [],
   providers: [],

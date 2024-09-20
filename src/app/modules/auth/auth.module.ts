@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
+import { LunaAuthComponent } from './auth.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [LunaAuthComponent],
   imports: [],
   exports: [],
   providers: [],
