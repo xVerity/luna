@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { LilyInputsModule } from './inputs/inputs.module';
+import { LilyLayoutModule } from './layout/layout.module';
 
 /**
  * The Lily component framework provides a set of common components and directives for use
@@ -9,8 +11,8 @@ import { NgModule } from '@angular/core';
  */
 @NgModule({
   declarations: [],
-  imports: [],
-  exports: [],
+  imports: [LilyLayoutModule, LilyInputsModule],
+  exports: [LilyLayoutModule, LilyInputsModule],
   providers: [],
 })
 export class LilyModule {}
