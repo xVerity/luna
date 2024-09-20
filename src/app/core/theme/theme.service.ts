@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { LILY_DEFAULT_THEME } from '@lily/theme/models/collection/default/default.const';
+import { LilyThemeService } from '@lily/theme/theme.service';
 import { LUNA_DEFAULT_THEME } from './models/collections/default/default-const';
 import { ELunaTheme } from './models/enums/theme';
 import { LunaTheme } from './models/theme';
@@ -10,6 +12,8 @@ import { LunaTheme } from './models/theme';
   providedIn: 'root',
 })
 export class LunaThemeService {
+  constructor(private readonly m_lilyTheme: LilyThemeService) {}
+
   /**
    * Applies a theme to the Luna application.
    * @param a_theme The theme to apply.
@@ -18,6 +22,7 @@ export class LunaThemeService {
     switch (a_theme) {
       case ELunaTheme.Default:
         this.applyThemeIntern(LUNA_DEFAULT_THEME);
+        this.m_lilyTheme.applyTheme(LILY_DEFAULT_THEME);
         break;
       case ELunaTheme.Dark:
       case ELunaTheme.Light:

@@ -1,0 +1,20 @@
+import { LilyTheme } from '@lily/theme/models/theme';
+import { LILY_DEFAULT_COLORS } from './default-colors';
+
+export const LILY_DEFAULT_THEME: LilyTheme = {
+  lilyInputBackgroundColor: LILY_DEFAULT_COLORS.INPUT_BACKGROUND_COLOR,
+  lilyInputBorderColor: LILY_DEFAULT_COLORS.INPUT_BORDER_COLOR,
+  lilyInputFontColor: LILY_DEFAULT_COLORS.INPUT_FONT_COLOR,
+  lilyInputFocusBackgroundColor:
+    LILY_DEFAULT_COLORS.INPUT_FOCUS_BACKGROUND_COLOR,
+  lilyInputFocusBorderColor: LILY_DEFAULT_COLORS.INPUT_FOCUS_BORDER_COLOR,
+  lilyInputFocusFontColor: LILY_DEFAULT_COLORS.INPUT_FOCUS_FONT_COLOR,
+  lilyInputDisabledBackgroundColor:
+    LILY_DEFAULT_COLORS.INPUT_DISABLED_BACKGROUND_COLOR,
+  lilyInputDisabledBorderColor: LILY_DEFAULT_COLORS.INPUT_DISABLED_BORDER_COLOR,
+  lilyInputDisabledFontColor: LILY_DEFAULT_COLORS.INPUT_DISABLED_FONT_COLOR,
+  lilyInputHoverBackgroundColor:
+    LILY_DEFAULT_COLORS.INPUT_HOVER_BACKGROUND_COLOR,
+  lilyInputHoverBorderColor: LILY_DEFAULT_COLORS.INPUT_HOVER_BORDER_COLOR,
+  lilyInputHoverFontColor: LILY_DEFAULT_COLORS.INPUT_HOVER_FONT_COLOR,
+};
