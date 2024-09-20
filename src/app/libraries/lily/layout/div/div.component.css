@@ -27,3 +27,11 @@
 .lily-div.lily-div-vertical-align-bottom {
   align-items: flex-end;
 }
+
+.lily-div.lily-div-direction-row {
+  flex-direction: row;
+}
+
+.lily-div.lily-div-direction-column {
+  flex-direction: column;
+}

@@ -6,6 +6,7 @@ import {
   Input,
   ViewChild,
 } from '@angular/core';
+import { ELilyDivDirection } from './models/enums/direction';
 import { ELilyDivHorizontalAlign } from './models/enums/horizontal-align';
 import { ELilyDivVerticalAlign } from './models/enums/vertical-align';
 import { LilyDivOptions } from './models/options';
@@ -25,6 +26,7 @@ export class LilyDivComponent implements AfterViewInit {
   @Input() options: LilyDivOptions = {
     verticalAlign: ELilyDivVerticalAlign.Center,
     horizontalAlign: ELilyDivHorizontalAlign.Center,
+    direction: ELilyDivDirection.Column,
   };
 
   @ViewChild('lilyDiv', { static: true })
@@ -45,6 +47,7 @@ export class LilyDivComponent implements AfterViewInit {
     if (this.options) {
       this.applyVerticalAlign(this.options.verticalAlign);
       this.applyHorizontalAlign(this.options.horizontalAlign);
+      this.applyDirection(this.options.direction);
     }
   }
 
@@ -58,6 +61,19 @@ export class LilyDivComponent implements AfterViewInit {
       default:
         throw new Error(
           `LilyDivComponent: Unsupported vertical alignment: ${a_verticalAlign}`
+        );
+    }
+  }
+
+  private applyDirection(a_direction: ELilyDivDirection): void {
+    switch (a_direction) {
+      case ELilyDivDirection.Row:
+      case ELilyDivDirection.Column:
+        this.divElement.classList.add(a_direction);
+        break;
+      default:
+        throw new Error(
+          `LilyDivComponent: Unsupported direction: ${a_direction}`
         );
     }
   }

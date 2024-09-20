@@ -1,3 +1,14 @@
+.lily-textbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.lily-textbox-label {
+  font-size: 14px;
+}
+
 .lily-textbox {
   width: 100%;
+  border-radius: 3px;
 }

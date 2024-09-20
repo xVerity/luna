@@ -1,3 +1,4 @@
+import { ELilyDivDirection } from './enums/direction';
 import { ELilyDivHorizontalAlign } from './enums/horizontal-align';
 import { ELilyDivVerticalAlign } from './enums/vertical-align';
 
@@ -14,4 +15,9 @@ export interface LilyDivOptions {
    * The horizontal alignment of the elements within the div.
    */
   horizontalAlign: ELilyDivHorizontalAlign;
+
+  /**
+   * The direction of the elements within the div.
+   */
+  direction: ELilyDivDirection;
 }
