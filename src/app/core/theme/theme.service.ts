@@ -1,7 +1,11 @@
 import { Injectable } from '@angular/core';
+import { CassThemeService } from '@cass/styles/services/theme.service';
 import { LILY_DEFAULT_THEME } from '@lily/theme/models/collection/default/default.const';
 import { LilyThemeService } from '@lily/theme/theme.service';
-import { LUNA_DEFAULT_THEME } from './models/collections/default/default-const';
+import {
+  LUNA_DEFAULT_CASS_THEME,
+  LUNA_DEFAULT_THEME,
+} from './models/collections/default/default-const';
 import { ELunaTheme } from './models/enums/theme';
 import { LunaTheme } from './models/theme';
 
@@ -12,7 +16,10 @@ import { LunaTheme } from './models/theme';
   providedIn: 'root',
 })
 export class LunaThemeService {
-  constructor(private readonly m_lilyTheme: LilyThemeService) {}
+  constructor(
+    private readonly m_lilyTheme: LilyThemeService,
+    private readonly m_cassTheme: CassThemeService
+  ) {}
 
   /**
    * Applies a theme to the Luna application.
@@ -23,6 +30,7 @@ export class LunaThemeService {
       case ELunaTheme.Default:
         this.applyThemeIntern(LUNA_DEFAULT_THEME);
         this.m_lilyTheme.applyTheme(LILY_DEFAULT_THEME);
+        this.m_cassTheme.applyTheme(LUNA_DEFAULT_CASS_THEME);
         break;
       case ELunaTheme.Dark:
       case ELunaTheme.Light:

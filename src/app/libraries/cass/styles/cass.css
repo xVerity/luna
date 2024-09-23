@@ -1,0 +1,12 @@
+:root {
+  --cassFontColor: none;
+  --cassBorderColor: none;
+  --cassbackgroundColor: none;
+}
+
+.cass-login-border {
+  display: flex;
+  border: 5px solid var(--cassBorderColor); /* Adjust the border color and width as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
